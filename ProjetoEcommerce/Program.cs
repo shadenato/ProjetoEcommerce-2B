@@ -1,7 +1,13 @@
+using ProjetoEcommerce.Repositorio;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Injeção de dependência.
+builder.Services.AddScoped<UsuarioRepositorio>();
+builder.Services.AddScoped<ClienteRepositorio>();
 
 var app = builder.Build();
 
