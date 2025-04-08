@@ -4,11 +4,11 @@
 
     {
         //CRIANDO O ENCAPSULAMENTO DO OBJETO COM GET E SET
-        public int Codigo { get; set; } //Acessores
+        public int CodCli { get; set; } //Acessores
                                         // Ao usar ?, você está explicitamente dizendo que a propriedade pode intencionalmente ter um valor nulo.
-        public string? Nome { get; set; }
-        public string? Telefone { get; set; }
-        public string? Email { get; set; }
+        public string? NomeCli { get; set; }
+        public string? TelCli { get; set; }
+        public string? EmailCli { get; set; }
         public List<Cliente>? ListaCliente { get; set; }
 
     }
